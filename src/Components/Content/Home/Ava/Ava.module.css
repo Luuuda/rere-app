@@ -1,0 +1,18 @@
+.ava .btn{
+    justify-content: space-between;
+    width: 100%;
+  }
+   button{
+    width: 50%;
+  
+  }
+  .ava{
+    display: flex;
+    width: 400px;
+  }
+
+  p.content.name{
+  font-size: 30px;
+  text-align: center;
+  color:aquamarine;
+ }

@@ -1,6 +1,6 @@
 .App-wrapper {
   display: grid;
-  margin: 0 auto;
+  margin:  auto;
   grid-template-areas:
     "head head"
     "nav content"
@@ -13,5 +13,6 @@
 
 body{
   background-image: url('img/bacground.jpg');
+  
   scroll-behavior: auto;
 }

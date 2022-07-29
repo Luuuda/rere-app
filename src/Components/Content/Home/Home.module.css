@@ -2,4 +2,29 @@
   grid-area: c;
   background-color: rgba(7, 17, 27, 0.283);
   height: 1080px;
+  display: flex;
+  justify-content: left;
   }
+/* div{
+    display: grid;
+    margin:0 auto;
+    grid-template-areas:
+    "ava info";
+    grid-template-rows: 60px 1fr;
+    grid-template-columns: 2fr 10f;
+    
+  } */
+
+  /* div {
+    border: 1px solid black;
+    padding: 5px;
+    margin-bottom: 5px;
+   }  */
+   /* #left { text-align: left; }
+   #right { text-align: right; }
+   #center { text-align: center; }
+   .content {
+    width: 20%;
+    background: #636363;
+   } */
+   

@@ -1,6 +1,8 @@
 
+import { renderEntireTree } from '../render';
+
 let stateData = {
-    profilePage:{
+    dialogPage:{
         dialogsData:[
             { id: 1, name: "Мария" },
             { id: 2, name: "Даша" },
@@ -20,7 +22,7 @@ let stateData = {
         { id: 7, message: "Отлично!" },
     ]
     },
- messagePage:{
+ profilePage:{
     posts:[
         { id: 1, message: 'Я Вова', likesCount: 32 },
         { id: 2, message: 'Я люблю гонаять на гелике', likesCount: 15 },
@@ -28,6 +30,16 @@ let stateData = {
     ]
  }
 
+}
+
+export let addPost = (postMessage)=>{
+    let newPost = {
+            id:5,
+            message:postMessage,
+            likeCount:0
+    }
+    stateData.profilePage.posts.push(newPost);
+    renderEntireTree(stateData);
 }
 
 export default stateData;

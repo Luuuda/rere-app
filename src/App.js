@@ -1,4 +1,4 @@
-import logo from './logo.svg';
+
 import './App.css';
 import Head from './Components/Head/Head';
 
@@ -23,13 +23,13 @@ function App(props) {
         <div className='App-wrapper-contet'>
           <Routes>
             <Route path="/home" element={<Home />} />
-            <Route path="/dialogs" element={<Dialogs state={props.stateData.profilePage}/>} />
-            <Route path="/profile" element={<Profile state={props.stateData.messagePage}/>} />
+            <Route path="/dialogs" element={<Dialogs state={props.stateData.dialogPage} />} />
+            <Route path="/profile" element={<Profile state={props.stateData.profilePage} addPost={props.addPost} />} />
             <Route path="/news" element={<News />} />
           </Routes>
         </div>
       </div>
-      <Footer />
+      {/* <Footer /> */}
     </BrowserRouter>
   );
 }
